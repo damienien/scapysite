@@ -27,12 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*','127.0.0.1','172.21.144.1','10.29.18.53','192.168.56.1','0.0.0.0']
 
+LOGIN_REDIRECT_URL = 'redirect_after_login'
 
 # Application definition
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'authentication.apps.AuthenticationConfig',
+    'tickets.apps.TicketsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
