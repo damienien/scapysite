@@ -17,6 +17,7 @@ def results(request, question_id):
     context = {
 		'question': question,
 		'question_id': question_id,
+  #toto
 	}
     return render(request, "polls/results.html", context)
 
