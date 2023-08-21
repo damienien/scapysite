@@ -1,0 +1,8 @@
+<h3> You're voting on question "{{ question }}" with id : {{ question_id }}</h3>
+
+<p> Actually, theses choices have : </p>
+<ul>
+    {% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} : {{ choice.votes }} votes</li>
+    {% endfor %}
+</ul>
